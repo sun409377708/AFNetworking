@@ -32,6 +32,7 @@
     NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
     [NSURLCache setSharedURLCache:URLCache];
     
+    //设置小菊花, 顶部指示栏
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
     
     UITableViewController *viewController = [[GlobalTimelineViewController alloc] initWithStyle:UITableViewStylePlain];
